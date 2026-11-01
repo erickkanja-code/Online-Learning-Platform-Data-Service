@@ -8,7 +8,7 @@ import pytest
 
 TEST_DATABASE_URL = os.environ.get(
     "TEST_DATABASE_URL",
-    "postgresql://postgres:postgres@localhost:5432/learning_platform_test",
+    "postgresql://postgres:postgres@localhost:5440/learning_platform_test",
 )
 SCHEMA_FILE = Path(__file__).parent.parent / "sql" / "schema.sql"
 

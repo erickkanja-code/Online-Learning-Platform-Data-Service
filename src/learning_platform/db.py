@@ -7,7 +7,7 @@ from pathlib import Path
 from psycopg2.pool import SimpleConnectionPool
 
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/learning_platform"
+    "DATABASE_URL", "postgresql://postgres:postgres@localhost:5440/learning_platform"
 )
 
 pool = SimpleConnectionPool(minconn=1, maxconn=5, dsn=DATABASE_URL)
