@@ -2,6 +2,9 @@
 -- 5,000 students, 10,000 enrollments and about 100,000 lesson completions.
 -- Everything is calculated from IDs, so the data is the same on every run.
 
+-- Update the statistics PostgreSQL uses to plan queries, now that the tables are full.
+ANALYZE;
+
 INSERT INTO courses (title, description) VALUES
     ('Python Basics', 'Variables, loops and functions'),
     ('Advanced Python', 'Generators, decorators and testing'),
